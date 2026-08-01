@@ -1,0 +1,28 @@
+/* Get Women Experience — Shadows, borders, transitions, textures */
+:root{
+  /* Soft, diffuse shadows — like a card resting on paper, never hard */
+  --shadow-xs:0 1px 2px color-mix(in srgb,var(--gw-ink) 6%,transparent);
+  --shadow-sm:0 2px 8px color-mix(in srgb,var(--gw-ink) 8%,transparent);
+  --shadow-md:0 8px 24px color-mix(in srgb,var(--gw-ink) 10%,transparent);
+  --shadow-lg:0 18px 48px color-mix(in srgb,var(--gw-ink) 12%,transparent);
+  /* QR / white card — crisp, slightly lifted off the wash */
+  --shadow-card:0 6px 20px color-mix(in srgb,var(--gw-ink) 12%,transparent);
+
+  /* Borders */
+  --border-hairline:1px solid var(--line-hairline);
+  --border-soft:1px solid var(--line-soft);
+  --border-accent:1px solid var(--line-accent);
+  --border-rule:1px solid color-mix(in srgb,var(--gw-wine) 55%,transparent);
+
+  /* Transitions — gentle, no bounce; watercolor calm */
+  --ease-soft:cubic-bezier(0.22,0.61,0.36,1); /* @kind other */
+  --dur-fast:140ms; /* @kind other */
+  --dur-base:240ms; /* @kind other */
+  --dur-slow:420ms; /* @kind other */
+  --transition-base:all var(--dur-base) var(--ease-soft);
+
+  /* Paper grain overlay — subtle multiply texture for washed surfaces */
+  --paper-tint:color-mix(in srgb,var(--gw-sand) 30%,transparent);
+  --wash-sky:linear-gradient(180deg,var(--gw-sky) 0%,color-mix(in srgb,var(--gw-sky) 45%,var(--gw-cream)) 60%,var(--gw-cream) 100%);
+  --wash-garden:linear-gradient(180deg,transparent 0%,color-mix(in srgb,var(--gw-sage) 22%,transparent) 100%);
+}
